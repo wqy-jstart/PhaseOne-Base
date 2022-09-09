@@ -1,5 +1,7 @@
 package apiDay03;
+
 import java.util.Objects;
+
 public class Point {
     private int x; //实例变量
     private int y;
