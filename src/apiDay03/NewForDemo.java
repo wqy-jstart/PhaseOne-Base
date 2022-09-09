@@ -7,7 +7,7 @@ import java.util.Iterator;
  */
 public class NewForDemo {
     public static void main(String[] args) {
-        //1）遍历数组
+        //1）遍历数组---for循环
         String[] array = {"one","two","three","four","five"};
         for (int i = 0; i < array.length; i++) {
             System.out.println(array[i]);
@@ -20,7 +20,7 @@ public class NewForDemo {
         }
         System.out.println("================================================");
 
-        //2）遍历集合
+        //2）遍历集合---迭代器
         Collection c = new ArrayList();
         //虽然add中可以加Object类型，但类型要保持一致，
         //否则遍历强转时不同类型会抛出ClassCastException异常
@@ -36,6 +36,7 @@ public class NewForDemo {
             System.out.println(str);
         }
         System.out.println("================================================");
+
         //新循环遍历集合---会被编译器改回迭代器遍历
         for (Object obj : c){
             String str = (String)obj;
