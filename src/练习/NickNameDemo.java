@@ -1,17 +1,19 @@
 package 练习;
-
-public class Demo1 {
+/**
+ * 普通类的匿名内部类重写特点
+ */
+public class NickNameDemo {
     public void Aoo(){
-        System.out.println("123445554");
+        System.out.println("12345678");
     }
     public void Boo(){
-        System.out.println("23241412414");
+        System.out.println("87654321");
     }
 }
 //利用Demo匿名内部类重写Aoo和Boo普通方法时可以选择性重写
 class Test{
     public static void main(String[] args) {
-        Demo1 d = new Demo1(){
+        NickNameDemo d = new NickNameDemo(){
             @Override
             public void Aoo() {
                 System.out.println("1234");
@@ -22,5 +24,7 @@ class Test{
                 System.out.println("abcde");
             }
         };
+        d.Aoo();
+        d.Boo();
     }
 }
