@@ -31,7 +31,15 @@ public class SortListDemo2 {
            1)前面的>后面的----升序
            2)前面的<后面的----降序
            */
-        Collections.sort(list1, new Comparator<String>() {
+//        Comparator<String> c = new Comparator<String>() {
+//            @Override
+//            public int compare(String o1, String o2) {
+////                return o1.length()-o2.length();//升序
+//                return o2.length()-o1.length();//降序
+//            }
+//        };
+//        Collections.sort(list1,c);
+        Collections.sort(list1, new Comparator<String>() {//★Collection.sort()方法第二个参数是传递一个比较器接口类型
             @Override
             public int compare(String o1, String o2) {
                 return o1.length()-o2.length();//按照元素的长度属性进行升序

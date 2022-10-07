@@ -27,5 +27,7 @@ public class SortListDemo {
         Collections.reverse(list); //反转list集合(数据已经变化了)
         System.out.println("list反转后："+list);
 
+        Collections.shuffle(list);//乱序排列
+        System.out.println("List乱序后的数据: "+list);
     }
 }
