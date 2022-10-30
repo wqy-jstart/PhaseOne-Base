@@ -3,7 +3,7 @@ package Day04;
 public class DoWhile {
     public static void main(String[] args) {
         int a=1;
-        int sum=0;
+        int sum=0;//定义刚开始的和为0
         do{
             sum+=a;
             a++;

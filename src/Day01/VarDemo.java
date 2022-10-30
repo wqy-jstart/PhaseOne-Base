@@ -18,6 +18,5 @@ public class VarDemo {//VarDemo必须用大驼峰命名法（首字母大写）�
         System.out.println(j);//系统向外输出变量j的值
         int score,myScore,myJavaScore;//小驼峰命名法（变量名）
         int Score,MyScore,MyJavaScore;//大驼峰命名法（类名）
-
     }
 }
