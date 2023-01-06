@@ -5,7 +5,7 @@ public class Manager {
         IWorker worker=new Worker();
         worker.work();
         worker.lunch();
-        IWorker superworker=new Worker();
+        IWorker superworker=new SuperWorker();
         superworker.work();
         superworker.lunch();
     }
