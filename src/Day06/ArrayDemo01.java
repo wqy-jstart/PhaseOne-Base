@@ -1,7 +1,7 @@
 package Day06;
 
 //数组
-public class Demo01 {
+public class ArrayDemo01 {
     public static void main(String[] args) {
         /*是一种数据类型（引用类型）
           相同数据类型元素的集合

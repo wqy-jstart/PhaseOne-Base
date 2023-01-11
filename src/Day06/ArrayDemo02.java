@@ -3,7 +3,7 @@ package Day06;
 
 import java.util.Arrays;//导入操纵数组工具包
 
-public class Demo02 {
+public class ArrayDemo02 {
     public static void main(String[] args) {
         //1)数组的复制：
         int[] a = {10, 20, 30, 40, 50};//起始数组
