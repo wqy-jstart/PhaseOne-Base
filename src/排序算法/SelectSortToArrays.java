@@ -20,17 +20,18 @@ public class SelectSortToArrays {
         for (int i = 0; i < ary.length - 1; i++) {
             int min = i;// 记录最小值下标
             for (int j = i + 1; j < ary.length; j++) {
-                if (ary[j] < ary[min]) {
-                    min = j;
+                if (ary[j] < ary[min]) {// 如果后一个元素比前一个小
+                    min = j;// 最小值下标改变为当前下标
                 }
             }
             // 将min指向的元素和i位置的元素互换
             if (min != i){
-                int tmp = ary[i];
+                int tmp = ary[i];// 让下标为i的元素与min交换
                 ary[i] = ary[min];
                 ary[min] = tmp;
             }
         }
         System.out.println(Arrays.toString(ary));
+        // [20, 40, 50, 60, 70, 80]
     }
 }
